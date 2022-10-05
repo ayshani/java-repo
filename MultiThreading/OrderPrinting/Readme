@@ -1,0 +1,26 @@
+Problem Statement
+-------------------
+
+Suppose there are three threads t1, t2 and t3.
+t1 prints First, t2 prints Second and t3 prints Third.
+The code for the class is as follows:
+
+public class OrderedPrinting {
+
+    public void printFirst() {
+       System.out.print("First");
+    }
+
+    public void printSecond() {
+       System.out.print("Second");
+    }
+
+    public void printThird() {
+       System.out.print("Third");
+    }
+
+}
+
+Thread t1 calls printFirst(), thread t2 calls printSecond(), and thread t3 calls printThird().
+The threads can run in any order. You have to synchronize the threads so that the
+functions printFirst(), printSecond() and printThird() are executed in order.
