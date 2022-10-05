@@ -1,0 +1,31 @@
+Problem Statement
+-------------------
+
+https://www.educative.io/courses/java-multithreading-for-senior-engineering-interviews/Y5PWrR8DrN2
+
+Suppose there are two threads t1 and t2. t1 prints Foo and t2 prints Bar.
+You are required to write a program which takes a user input n.
+Then the two threads print Foo and Bar alternately n number of times. The code for the class is as follows:
+
+class PrintFooBar {
+
+    public void PrintFoo() {
+        for (int i = 1 i <= n;  i++){
+        System.out.print("Foo");
+        }
+    }
+
+    public void PrintBar() {
+        for (int i = 1; i <= n; i++) {
+        System.out.print("Bar");
+        }
+    }
+}
+The two threads will run sequentially. You have to synchronize the two threads so that the functions
+PrintFoo() and PrintBar() are executed in an order.
+
+O/P :
+n = 3
+FooBar
+FooBar
+FooBar
