@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/BuildAMolecule/BuildAMolecule.iml" filepath="$PROJECT_DIR$/MultiThreading/BuildAMolecule/BuildAMolecule.iml" />
       <module fileurl="file://$PROJECT_DIR$/java8/Comparater/Comparater.iml" filepath="$PROJECT_DIR$/java8/Comparater/Comparater.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaException/CustomException/CustomException.iml" filepath="$PROJECT_DIR$/JavaException/CustomException/CustomException.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java8/FirstLamda/FirstLamda.iml" filepath="$PROJECT_DIR$/java8/FirstLamda/FirstLamda.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/FizzBuzzProblem/FizzBuzzProblem.iml" filepath="$PROJECT_DIR$/MultiThreading/FizzBuzzProblem/FizzBuzzProblem.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaException/JavaException.iml" filepath="$PROJECT_DIR$/JavaException/JavaException.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/MultiThreading.iml" filepath="$PROJECT_DIR$/MultiThreading/MultiThreading.iml" />
@@ -15,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/PrintNumSeries/PrintNumSeries.iml" filepath="$PROJECT_DIR$/MultiThreading/PrintNumSeries/PrintNumSeries.iml" />
       <module fileurl="file://$PROJECT_DIR$/java8/java8.iml" filepath="$PROJECT_DIR$/java8/java8.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java_git_repo.iml" filepath="$PROJECT_DIR$/.idea/java_git_repo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java8/lamda/lamda.iml" filepath="$PROJECT_DIR$/java8/lamda/lamda.iml" />
     </modules>
   </component>
 </project>
