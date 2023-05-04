@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/AsyncToSync/AsyncToSync.iml" filepath="$PROJECT_DIR$/MultiThreading/AsyncToSync/AsyncToSync.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/BuildAMolecule/BuildAMolecule.iml" filepath="$PROJECT_DIR$/MultiThreading/BuildAMolecule/BuildAMolecule.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java8/Comparater/Comparater.iml" filepath="$PROJECT_DIR$/java8/Comparater/Comparater.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaException/CustomException/CustomException.iml" filepath="$PROJECT_DIR$/JavaException/CustomException/CustomException.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/FizzBuzzProblem/FizzBuzzProblem.iml" filepath="$PROJECT_DIR$/MultiThreading/FizzBuzzProblem/FizzBuzzProblem.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaException/JavaException.iml" filepath="$PROJECT_DIR$/JavaException/JavaException.iml" />
