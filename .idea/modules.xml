@@ -3,14 +3,23 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/AsyncToSync/AsyncToSync.iml" filepath="$PROJECT_DIR$/MultiThreading/AsyncToSync/AsyncToSync.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreading/Barrier/Barrier.iml" filepath="$PROJECT_DIR$/MultiThreading/Barrier/Barrier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreading/BlockingQueue/BlockingQueue.iml" filepath="$PROJECT_DIR$/MultiThreading/BlockingQueue/BlockingQueue.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/BuildAMolecule/BuildAMolecule.iml" filepath="$PROJECT_DIR$/MultiThreading/BuildAMolecule/BuildAMolecule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CoreJava/CoreJava.iml" filepath="$PROJECT_DIR$/CoreJava/CoreJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaException/CustomException/CustomException.iml" filepath="$PROJECT_DIR$/JavaException/CustomException/CustomException.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreading/DeferredCallback/DeferredCallback.iml" filepath="$PROJECT_DIR$/MultiThreading/DeferredCallback/DeferredCallback.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/FizzBuzzProblem/FizzBuzzProblem.iml" filepath="$PROJECT_DIR$/MultiThreading/FizzBuzzProblem/FizzBuzzProblem.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaException/JavaException.iml" filepath="$PROJECT_DIR$/JavaException/JavaException.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/MultiThreading.iml" filepath="$PROJECT_DIR$/MultiThreading/MultiThreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/OrderPrinting/OrderPrinting.iml" filepath="$PROJECT_DIR$/MultiThreading/OrderPrinting/OrderPrinting.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/PrintFooBar/PrintFooBar.iml" filepath="$PROJECT_DIR$/MultiThreading/PrintFooBar/PrintFooBar.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/PrintNumSeries/PrintNumSeries.iml" filepath="$PROJECT_DIR$/MultiThreading/PrintNumSeries/PrintNumSeries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreading/ReadWriteLock/ReadWriteLock.iml" filepath="$PROJECT_DIR$/MultiThreading/ReadWriteLock/ReadWriteLock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreading/Semaphore/Semaphore.iml" filepath="$PROJECT_DIR$/MultiThreading/Semaphore/Semaphore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CoreJava/StaticOperations/StaticOperations.iml" filepath="$PROJECT_DIR$/CoreJava/StaticOperations/StaticOperations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreading/TokenBucketProblem/TokenBucketProblem.iml" filepath="$PROJECT_DIR$/MultiThreading/TokenBucketProblem/TokenBucketProblem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreading/UnisexBathroomProblem/UnisexBathroomProblem.iml" filepath="$PROJECT_DIR$/MultiThreading/UnisexBathroomProblem/UnisexBathroomProblem.iml" />
       <module fileurl="file://$PROJECT_DIR$/java8/java8.iml" filepath="$PROJECT_DIR$/java8/java8.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java_git_repo.iml" filepath="$PROJECT_DIR$/.idea/java_git_repo.iml" />
       <module fileurl="file://$PROJECT_DIR$/java8/lamda/lamda.iml" filepath="$PROJECT_DIR$/java8/lamda/lamda.iml" />

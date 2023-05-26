@@ -15,5 +15,12 @@ public class Main {
             System.out.println("AgeLimitException caught");
         }
         System.out.println("Hello world!");
+
+        try {
+            System.out.println(service.checkServiceFinally(u2));
+            System.out.println(service.checkServiceFinally(u3));
+        } catch (AgeLimitException e) {
+
+        }
     }
 }

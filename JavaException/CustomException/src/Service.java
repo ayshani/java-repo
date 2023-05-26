@@ -7,4 +7,22 @@ public class Service {
             System.out.println("Service availed");
         }
     }
+
+    public int checkServiceFinally(User u) throws AgeLimitException {
+        try{
+            if(u.getAge()<18){
+                throw new AgeLimitException(u.getName() +" hase age lesss than 18");
+            } else{
+                System.out.println("Service availed");
+                return 12;
+            }
+        } catch(AgeLimitException e){
+            System.out.println("Catch availed");
+            return 13;
+        } finally {
+            System.out.println("Finally availed");
+            return 14;
+        }
+
+    }
 }
