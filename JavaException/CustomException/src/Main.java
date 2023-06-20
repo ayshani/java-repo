@@ -22,5 +22,13 @@ public class Main {
         } catch (AgeLimitException e) {
 
         }
+
+        System.out.println("Start --------- AgeLimitException caught");
+        try {
+            System.out.println(service.checkServiceFinallyException(u2));
+        } catch (AgeLimitException e) {
+            System.out.println("AgeLimitException caught");
+        }
+
     }
 }

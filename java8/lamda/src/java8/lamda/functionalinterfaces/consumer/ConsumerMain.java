@@ -1,4 +1,4 @@
-package java8.lamda.functionalinterfaces;
+package java8.lamda.functionalinterfaces.consumer;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
@@ -8,6 +8,9 @@ public class ConsumerMain {
     public static void main(String[] args) {
         Consumer<String> stringConsumer = s-> System.out.println(s);
         stringConsumer.accept("Hello world");
+
+        Consumer<String> stringConsumer1 = s-> System.out.println(s.toUpperCase());
+        stringConsumer1.accept("Hello world");
 
         Consumer<Integer> integerConsumer = i -> System.out.println("int value = " +i);
         integerConsumer.accept(13);
