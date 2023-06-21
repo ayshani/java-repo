@@ -2,8 +2,10 @@ package streams;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class FilterMain {
+
 
     public static void main(String[] args) {
         List<Integer> list = List.of(1,2,3,4,5,6,7,13,45,67,24);
@@ -34,46 +36,15 @@ public class FilterMain {
                 .filter(person -> person.getAge()>10)// Filtering the objects where age is greater than 10
                 .filter(person -> person.getAge()<50)// Filtering the objects where age is less than 50
                 .forEach(System.out::println);
+
+        filterStudents().forEach(System.out::println);
+    }
+
+    public static List<Student> filterStudents(){
+        return StudentDB.getAllStudents().stream()
+                .filter(student -> student.getGender().equals("female"))
+                .filter(student -> student.getGpa()>=3.9)
+                .collect(Collectors.toList());
     }
 }
 
-class Person {
-    String name;
-    int age;
-    String country;
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    Person(String name, int age, String country){
-        this(name,age);
-        this.country =country;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
-
-}

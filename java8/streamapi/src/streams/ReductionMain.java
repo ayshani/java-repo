@@ -3,6 +3,7 @@ package streams;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.SortedMap;
 
 /*
 reduction operations#
@@ -67,5 +68,38 @@ public class ReductionMain {
         int totalSum = numList.stream()
                 .reduce(5, (partialSum, num) -> num+partialSum);
         System.out.println("The total sum is " + totalSum);
+
+        List<Integer> integers = List.of(1,3,5,7);
+        List<Integer> integers1 = List.of();
+        System.out.println(performMultiplication(integers));
+
+        Optional<Integer> result =  performMultiplicationWithoutIdentity(integers);
+        System.out.println(result.isPresent());
+        System.out.println(result.get());
+
+        Optional<Integer> result2 =  performMultiplicationWithoutIdentity(integers1);
+        if(result2.isPresent())
+            System.out.println(result2.get());
+        Optional<Student> studentOptional = getHighestGPAStudent();
+        if(studentOptional.isPresent()){
+            System.out.println(studentOptional.get());
+        }
+    }
+
+    public static int performMultiplication(List<Integer> integers){
+        return integers.stream()
+                .reduce(1, (a,b) -> a*b);
+
+    }
+
+    public static Optional<Integer> performMultiplicationWithoutIdentity(List<Integer> integers){
+        return integers.stream()
+                .reduce( (a,b) -> a*b);
+
+    }
+
+    public static Optional<Student> getHighestGPAStudent(){
+        return StudentDB.getAllStudents().stream()
+                .reduce((s1,s2) -> s1.getGpa()>s2.getGpa()?s1:s2);
     }
 }

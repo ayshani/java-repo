@@ -1,8 +1,16 @@
-package streams;
+package streams.map;
+
+import streams.Student;
+import streams.StudentDB;
 
 import javax.xml.namespace.QName;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.toSet;
 
 public class MapMain {
     public static void main(String[] args) {
@@ -15,11 +23,11 @@ public class MapMain {
         // map() is used to convert each name to upper case.
         // Note: The map() method does not modify the original list.
         list.stream()
-                .map(name -> name.toUpperCase()) //map() takes an input of Function<T, R> type.
+                .map(String::toUpperCase) //map() takes an input of Function<T, R> type.
                 .forEach(System.out::println); // forEach() takes an input of Consumer type.
 
         list.stream()
-                .mapToInt(name -> name.length())
+                .mapToInt(String::length)
                 .forEach(System.out::println);
 
         List<List<String>> flatmap = new ArrayList<>();
@@ -41,5 +49,25 @@ public class MapMain {
                 .filter( x-> x.equals("a"))
                 .forEach(System.out::println);
 
+        System.out.println("---------------");
+        System.out.println(namesList());
+        System.out.println("---------------");
+        System.out.println(namesSet());
+    }
+
+    public static List<String> namesList(){
+        List<String> studentnames = StudentDB.getAllStudents().stream()
+                .map(Student::getName)
+                .map(String::toUpperCase)
+                .collect(toList());
+        return studentnames;
+    }
+
+    public static Set<String> namesSet(){
+        Set<String> studentnames = StudentDB.getAllStudents().stream()
+                .map(Student::getName)
+                .map(String::toUpperCase)
+                .collect(toSet());
+        return studentnames;
     }
 }

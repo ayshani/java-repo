@@ -49,5 +49,31 @@ public class MatchingMain {
         boolean anyRussian = list.stream()
                 .noneMatch(p-> p.getCountry().equals("Russia"));
         System.out.println("Are there no resident of Russia: " + anyRussian);
+
+        System.out.println("-------------");
+        System.out.println(allMatch());
+        System.out.println("-------------");
+        System.out.println(anyMatch());
+        System.out.println("-------------");
+        System.out.println(noneMatch());
+
+    }
+
+    public static boolean allMatch(){
+        return StudentDB.getAllStudents()
+                .stream()
+                .allMatch(student -> student.getGpa()>=3.9);
+    }
+
+    public static boolean anyMatch(){
+        return StudentDB.getAllStudents()
+                .stream()
+                .anyMatch(student -> student.getGpa()==2);
+    }
+
+    public static boolean noneMatch(){
+        return StudentDB.getAllStudents()
+                .stream()
+                .noneMatch(student -> student.getGpa()==2);
     }
 }

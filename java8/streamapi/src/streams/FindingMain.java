@@ -1,5 +1,6 @@
 package streams;
 
+import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -35,5 +36,30 @@ public class FindingMain {
         if(optionalPerson.isPresent())
             System.out.println(optionalPerson.get());
 
+        Optional<Student> studentOptional = findAny();
+        if(studentOptional.isPresent()){
+            System.out.println(studentOptional.get());
+        }else {
+            System.out.println("student not found");
+        }
+
+        Optional<Student> studentOptional1 = findFirst();
+        if(studentOptional1.isPresent()){
+            System.out.println(studentOptional1.get());
+        }else {
+            System.out.println("student not found");
+        }
+    }
+
+    public static Optional<Student> findAny(){
+        return StudentDB.getAllStudents().stream()
+                .filter(student -> student.getGpa()>=3.9)
+                .findAny();
+    }
+
+    public static Optional<Student> findFirst(){
+        return StudentDB.getAllStudents().stream()
+                .filter(student -> student.getGpa()>=3.9)
+                .findFirst();
     }
 }
