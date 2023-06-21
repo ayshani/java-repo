@@ -1,9 +1,17 @@
 package java8.lamda.functionalinterfaces.consumer;
 
+import java8.lamda.functionalinterfaces.Student;
+import java8.lamda.functionalinterfaces.StudentDB;
+
+import java.util.List;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 public class ConsumerMain {
+
+    static Consumer<Student> c1 = (s) -> System.out.println(s);
+    static Consumer<Student> c2 = (s) -> System.out.print(s.getName());
+    static Consumer<Student> c3 = (s) -> System.out.println(s.getActivities());
 
     public static void main(String[] args) {
         Consumer<String> stringConsumer = s-> System.out.println(s);
@@ -24,5 +32,30 @@ public class ConsumerMain {
 
         BiConsumer<String, String> greet = (s1, s2) -> System.out.println(s1 + s2);
         greet.accept("Hello", "World");
+
+        printName();
+        printNameAndActivities();
+        printNameAndActivitiesUsingCondition();
+
+    }
+
+    public static void printName(){
+        List<Student> studentList  = StudentDB.getAllStudents();
+        studentList.forEach(c1);
+    }
+
+    public static void printNameAndActivities(){
+        List<Student> studentList  = StudentDB.getAllStudents();
+        studentList.forEach(c2.andThen(c3)); // consumer chaining
+    }
+
+    public static void printNameAndActivitiesUsingCondition(){
+        System.out.println("printNameAndActivitiesUsingCondition...........");
+        List<Student> studentList  = StudentDB.getAllStudents();
+        studentList.forEach((student -> {
+            if(student.getGradeLevel()>=3 && student.getGpa()>=3){
+                c2.andThen(c3).accept(student);
+            }
+        }));
     }
 }

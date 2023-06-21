@@ -1,4 +1,6 @@
-package java8.lamda.functionalinterfaces;
+package java8.lamda.functionalinterfaces.function;
+
+import java8.lamda.functionalinterfaces.Person;
 
 import java.util.function.IntUnaryOperator;
 import java.util.function.UnaryOperator;
@@ -12,7 +14,9 @@ package, it extends apply() method
  */
 public class UnaryOperatorMain {
 
+    static UnaryOperator<String> unaryOperator = (s) -> s.concat("Default");
     public static void main(String[] args) {
+        System.out.println(unaryOperator.apply("Hello"));
         Person person = new Person();
         UnaryOperator<Person> operator = (p) ->{
             p.setName("Ravi");
@@ -28,31 +32,3 @@ public class UnaryOperatorMain {
     }
 }
 
-class Person{
-    String name;
-    int age;
-
-    Person() {
-    }
-
-    Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-}

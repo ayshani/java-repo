@@ -1,4 +1,4 @@
-package java8.lamda.functionalinterfaces;
+package java8.lamda.functionalinterfaces.function;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;

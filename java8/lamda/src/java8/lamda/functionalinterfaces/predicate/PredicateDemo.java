@@ -1,4 +1,4 @@
-package java8.lamda.functionalinterfaces;
+package java8.lamda.functionalinterfaces.predicate;
 
 import java8.lamda.comparator.Person;
 
