@@ -16,7 +16,7 @@ public class StudentDB {
 
         // 3rd grad
         Student student3 = new Student("Anuj",3,6,"male" , List.of("painting"),10);
-        Student student4 = new Student("Harry",3,8,"female" , List.of("playing", "painting"), 9);
+        Student student4 = new Student("Harry",3,2,"female" , List.of("playing", "painting"), 9);
 
         // 4th grad
         Student student5 = new Student("Cali",4,2,"male" , List.of("reading", "painting"),15);
