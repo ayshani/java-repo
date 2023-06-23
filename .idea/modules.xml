@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/PrintNumSeries/PrintNumSeries.iml" filepath="$PROJECT_DIR$/MultiThreading/PrintNumSeries/PrintNumSeries.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/ReadWriteLock/ReadWriteLock.iml" filepath="$PROJECT_DIR$/MultiThreading/ReadWriteLock/ReadWriteLock.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/Semaphore/Semaphore.iml" filepath="$PROJECT_DIR$/MultiThreading/Semaphore/Semaphore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CoreJava/Serialization/Serialization.iml" filepath="$PROJECT_DIR$/CoreJava/Serialization/Serialization.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoreJava/StaticOperations/StaticOperations.iml" filepath="$PROJECT_DIR$/CoreJava/StaticOperations/StaticOperations.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/SupermanProblem/SupermanProblem.iml" filepath="$PROJECT_DIR$/MultiThreading/SupermanProblem/SupermanProblem.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/TokenBucketProblem/TokenBucketProblem.iml" filepath="$PROJECT_DIR$/MultiThreading/TokenBucketProblem/TokenBucketProblem.iml" />
