@@ -7,7 +7,7 @@ public class SerialDeMain {
         String filename = "demo.ser";
         System.out.println("Serialization -----");
 
-        DemoObject obj = new DemoObject("Abc", 34);
+        DemoObject obj = new DemoObject("Abc", 34, 1,20);
 
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(filename);
@@ -36,7 +36,7 @@ public class SerialDeMain {
             objectInputStream.close();
             fileInputStream.close();
 
-            System.out.println("Object has been de-serialized : "+ deserializedObejct);
+            System.out.println("Object has been de-serialized : "+ deserializedObejct + " , Books = "+DemoObject.getBooks());
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
