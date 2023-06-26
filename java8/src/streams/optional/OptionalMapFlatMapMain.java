@@ -1,8 +1,8 @@
 package streams.optional;
 
+import common.Student;
+import common.StudentDB;
 import streams.Bike;
-import streams.Student;
-import streams.StudentDB;
 
 import java.util.Optional;
 

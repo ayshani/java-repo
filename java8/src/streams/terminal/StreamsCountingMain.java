@@ -1,6 +1,6 @@
 package streams.terminal;
 
-import streams.StudentDB;
+import common.StudentDB;
 
 import java.util.stream.Collectors;
 

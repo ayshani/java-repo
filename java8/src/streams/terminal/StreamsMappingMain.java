@@ -1,7 +1,7 @@
 package streams.terminal;
 
-import streams.Student;
-import streams.StudentDB;
+import common.Student;
+import common.StudentDB;
 
 import java.util.List;
 import java.util.Set;
@@ -10,7 +10,8 @@ import java.util.stream.Collectors;
 public class StreamsMappingMain {
 
     public static void main(String[] args) {
-        List<String> studentNames =  StudentDB.getAllStudents()
+        List<String> studentNames =
+                StudentDB.getAllStudents()
                 .stream()
                 .collect(Collectors.mapping(Student::getName, Collectors.toList()));
         System.out.println("nameList : "+studentNames);

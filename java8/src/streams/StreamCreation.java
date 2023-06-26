@@ -1,5 +1,8 @@
 package streams;
 
+import common.Student;
+import common.StudentDB;
+
 import java.util.List;
 import java.util.Map;
 import java.util.function.Predicate;

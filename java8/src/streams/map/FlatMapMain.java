@@ -1,7 +1,7 @@
 package streams.map;
 
-import streams.Student;
-import streams.StudentDB;
+import common.Student;
+import common.StudentDB;
 
 import java.util.List;
 

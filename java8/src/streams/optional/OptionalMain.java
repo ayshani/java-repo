@@ -1,6 +1,7 @@
 package streams.optional;
 
-import streams.Student;
+
+import common.Student;
 
 import java.util.Optional;
 

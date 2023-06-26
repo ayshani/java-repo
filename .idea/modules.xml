@@ -28,7 +28,6 @@
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/UnisexBathroomProblem/UnisexBathroomProblem.iml" filepath="$PROJECT_DIR$/MultiThreading/UnisexBathroomProblem/UnisexBathroomProblem.iml" />
       <module fileurl="file://$PROJECT_DIR$/java8/java8.iml" filepath="$PROJECT_DIR$/java8/java8.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java_git_repo.iml" filepath="$PROJECT_DIR$/.idea/java_git_repo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java8/streamapi/streamapi.iml" filepath="$PROJECT_DIR$/java8/streamapi/streamapi.iml" />
     </modules>
   </component>
 </project>

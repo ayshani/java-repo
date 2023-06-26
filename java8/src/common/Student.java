@@ -1,4 +1,6 @@
-package streams;
+package common;
+
+import streams.Bike;
 
 import java.util.List;
 import java.util.Optional;

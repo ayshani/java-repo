@@ -1,6 +1,6 @@
 package lamda.functionalinterfaces.methodreference;
 
-import lamda.functionalinterfaces.Student;
+import common.Student;
 
 import java.util.function.Function;
 import java.util.function.Supplier;

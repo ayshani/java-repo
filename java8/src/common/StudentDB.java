@@ -1,5 +1,8 @@
-package streams;
+package common;
 
+import streams.Bike;
+
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Supplier;
@@ -26,7 +29,7 @@ public class StudentDB {
         Student student5 = new Student("Cali",4,2,"male" , List.of("reading", "painting"),15);
         Student student6 = new Student("June",5,9,"female" , List.of("gaming", "painting"), 14);
 
-        List<Student> studentList = List.of(student1, student2,student3,student4,student5,student6);
+        List<Student> studentList = Arrays.asList(student1, student2,student3,student4,student5,student6);
         return studentList;
     }
 }

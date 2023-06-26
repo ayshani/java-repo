@@ -1,7 +1,7 @@
 package lamda.functionalinterfaces.supplier;
 
-import lamda.functionalinterfaces.Student;
-import lamda.functionalinterfaces.StudentDB;
+import common.Student;
+import common.StudentDB;
 
 import java.util.List;
 import java.util.function.Supplier;

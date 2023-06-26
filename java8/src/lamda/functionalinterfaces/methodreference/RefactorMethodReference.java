@@ -1,7 +1,7 @@
 package lamda.functionalinterfaces.methodreference;
 
-import lamda.functionalinterfaces.Student;
-import lamda.functionalinterfaces.StudentDB;
+import common.Student;
+import common.StudentDB;
 
 import java.util.function.Predicate;
 

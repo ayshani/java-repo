@@ -1,7 +1,7 @@
 package lamda.functionalinterfaces.function;
 
-import lamda.functionalinterfaces.Student;
-import lamda.functionalinterfaces.StudentDB;
+import common.Student;
+import common.StudentDB;
 import lamda.functionalinterfaces.predicate.PredicateStudent;
 
 import java.util.HashMap;

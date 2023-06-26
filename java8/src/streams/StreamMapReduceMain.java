@@ -1,5 +1,8 @@
 package streams;
 
+import common.Student;
+import common.StudentDB;
+
 public class StreamMapReduceMain {
 
     private static int getAllNotBooks(){
