@@ -30,6 +30,12 @@ public class Test1 {
         performCubeAndPrintGreaterThan50(list);
         sortAndConvertToStreams(nums);
         mapToUpperCase(Arrays.asList("explained", "through", "programs"));
+        conertListToMapConsideringDuplicatedKeys();
+        countEachElement(Arrays.asList("explained", "through", "programs","explained"));
+        findOnlyDuplicateElementsWithItsCount(Arrays.asList("explained", "through", "programs","explained"));
+        checkNonNullObjectUsingOptional();
+        findMaxElement(nums);
+        findCountOfChars("string data to count each character");
     }
 
     /*
@@ -203,5 +209,76 @@ public class Test1 {
         System.out.println("mapToUpperCase : ");
         List<String> strings1 = strings.stream().map(String::toUpperCase).collect(Collectors.toList());
         System.out.println(strings1);
+    }
+
+    //How to convert a List of objects into a Map by considering duplicated keys and store them in sorted order?
+    public static void conertListToMapConsideringDuplicatedKeys() {
+        System.out.println("conertListToMapConsideringDuplicatedKeys : ");
+        List<Notes> notesList =  Arrays.asList(
+                new Notes(1, "note1", 11),
+                new Notes(2, "note2", 22),
+                new Notes(3, "note3", 33),
+                new Notes(4, "note4", 44),
+                new Notes(5, "note5", 55),
+                new Notes(6, "note4", 66)
+        );
+        Map<String,Long> map = notesList.stream()
+                .sorted(Comparator.comparing(Notes::getTag).reversed())
+                .collect(Collectors.toMap(Notes::getName , Notes::getTag,
+                        (oldValue, newValue) -> oldValue,LinkedHashMap::new));
+
+        System.out.println(map);
+    }
+
+    //How to count each element/word from the String ArrayList in Java8?
+    public static void countEachElement(List<String> strings) {
+        System.out.println("countEachElement : ");
+        Map<String,Long> map = strings.stream()
+                .collect(Collectors.groupingBy(string -> string,Collectors.counting()));
+        System.out.println(map);
+    }
+
+    //How to find only duplicate elements with its count from the String ArrayList in Java8?
+    public static void findOnlyDuplicateElementsWithItsCount(List<String> strings) {
+        System.out.println("findOnlyDuplicateElementsWithItsCount : ");
+        Map<String,Long> map = strings.stream()
+                .filter(string -> Collections.frequency(strings,string)>1)
+                .collect(Collectors.groupingBy(string -> string,Collectors.counting()));
+        System.out.println(map);
+    }
+
+    //How to check if list is empty in Java 8 using Optional, if not null iterate through the list and print the object?
+    public static void checkNonNullObjectUsingOptional() {
+        System.out.println("checkNonNullObjectUsingOptional : ");
+        List<Notes> notesList =  Arrays.asList(
+                new Notes(1, "note1", 11),
+                new Notes(2, "note2", 22),
+                new Notes(3, "note3", 33),
+                new Notes(4, "note4", 44),
+                new Notes(5, "note5", 55),
+                new Notes(6, "note4", 66)
+        );
+        Optional.ofNullable(notesList)
+                        .orElseGet(Collections::emptyList)
+                                . stream().filter(Objects::nonNull)
+                        .map(notes -> notes.getName())
+                        .forEach(System.out::println);
+
+    }
+
+    //Write a Program to find the Maximum element in an array?
+    public static void findMaxElement(int[] nums) {
+        System.out.println("findMaxElement : ");
+        System.out.println(Arrays.stream(nums).max().getAsInt());
+    }
+
+    //Write a program to print the count of each character in a String?
+    public static void findCountOfChars(String s) {
+        System.out.println("findCountOfChars : ");
+        Map<String, Long> map = Arrays.stream(s.split(""))
+                .map(String::toLowerCase)
+                .sorted()
+                .collect(Collectors.groupingBy(str -> str, LinkedHashMap::new, Collectors.counting()));
+        System.out.println(map);
     }
 }
