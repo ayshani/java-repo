@@ -45,6 +45,7 @@ public class ConsumerMain {
     }
 
     public static void printNameAndActivities(){
+        System.out.println("printNameAndActivities...........");
         List<Student> studentList  = StudentDB.getAllStudents();
         studentList.forEach(c2.andThen(c3)); // consumer chaining
     }

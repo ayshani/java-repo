@@ -4,12 +4,14 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import static java.util.stream.Collectors.toList;
+
 public class NumericStreamMapMain {
 
     public static List<Integer> mapTOObject(){
         return IntStream.rangeClosed(1,5)
                 .mapToObj((i) -> new Integer(i))
-                .collect(Collectors.toList());
+                .collect(toList());
     }
 
     public static long mapTOLong(){

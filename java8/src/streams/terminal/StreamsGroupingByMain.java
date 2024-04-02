@@ -52,13 +52,16 @@ public class StreamsGroupingByMain {
     public static void calculateTopGpa(){
         Map<Integer, Optional<Student>> mapOptional = StudentDB.getAllStudents()
                 .stream()
-                .collect(Collectors.groupingBy(Student::getGradeLevel, Collectors.maxBy(Comparator.comparing(Student::getGpa))));
+                .collect(Collectors.groupingBy(Student::getGradeLevel,
+                        Collectors.maxBy(Comparator.comparing(Student::getGpa))));
 
         System.out.println(mapOptional);
 
         Map<Integer, Student> mapOptional1 = StudentDB.getAllStudents()
                 .stream()
-                .collect(Collectors.groupingBy(Student::getGradeLevel, Collectors.collectingAndThen(Collectors.maxBy(Comparator.comparing(Student::getGpa)),Optional::get)));
+                .collect(Collectors.groupingBy(Student::getGradeLevel,
+                        Collectors.collectingAndThen(Collectors.maxBy(Comparator.comparing(Student::getGpa)),
+                                Optional::get)));
 
         System.out.println(mapOptional1);
     }

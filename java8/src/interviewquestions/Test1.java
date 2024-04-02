@@ -239,10 +239,10 @@ public class Test1 {
     }
 
     //How to find only duplicate elements with its count from the String ArrayList in Java8?
-    public static void findOnlyDuplicateElementsWithItsCount(List<String> strings) {
+    public static void findOnlyDuplicateElementsWithItsCount(List<String> list) {
         System.out.println("findOnlyDuplicateElementsWithItsCount : ");
-        Map<String,Long> map = strings.stream()
-                .filter(string -> Collections.frequency(strings,string)>1)
+        Map<String,Long> map = list.stream()
+                .filter(str -> Collections.frequency(list,str)>1)
                 .collect(Collectors.groupingBy(string -> string,Collectors.counting()));
         System.out.println(map);
     }

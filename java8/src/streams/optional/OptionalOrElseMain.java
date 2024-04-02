@@ -17,8 +17,8 @@ public class OptionalOrElseMain {
 
     // orElseGet
     public static String orElseGet(){
-        Optional<Student> studentoptional = Optional.ofNullable(StudentDB.studentSupplier.get());
-        //Optional<Student> studentoptional = Optional.ofNullable(null);
+        //Optional<Student> studentoptional = Optional.ofNullable(StudentDB.studentSupplier.get());
+        Optional<Student> studentoptional = Optional.ofNullable(null);
         String name  = studentoptional.map(Student::getName).orElseGet(()->"Default");
         return name;
     }

@@ -1,0 +1,15 @@
+Instructions to learn Java 8
+-----------------------------------
+
+1. starts with imperativedeclarative package
+2. then go to defaults package. it talks about interfaces in java 8.
+3. then go to lamda package.
+    a. firstlambda
+    b. comparator
+    c. functionalInterface
+        i. predicate
+        ii. Consumer
+        iii. function
+        iv. Supplier
+        v. Method reference
+4. then go to streams
